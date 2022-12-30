@@ -2,6 +2,9 @@
 This was the task given to me during the internship at blue planet
 I have redesigned the landing page of the website and made a few design changes
 
+The website link :-
+https://wendemsky.github.io/Blue-Nudge-Website/
+
 ![image](https://user-images.githubusercontent.com/61985456/210059333-de57b923-71fd-4312-b600-a66ad7261180.png)
 ![image](https://user-images.githubusercontent.com/61985456/210059365-8844f7cc-0ad8-4dcd-bf9e-ceeb1e6d539d.png)
 ![image](https://user-images.githubusercontent.com/61985456/210059417-594cc962-6be9-42a4-9124-8d6d114ee5c5.png)
