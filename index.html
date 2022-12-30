@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Planet - Redesign </title>
+    <link rel="icon" href="https://blue-nudge.com/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://blue-nudge.com/site/css/bootstrap.min.css">
+    <link href="https://blue-nudge.com/site/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/venobox.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"><!-- 
+    <link rel="icon" href="img/fevicon.jpg" type="image/jpg"/>  -->
+    <link href="https://blue-nudge.com/site/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://blue-nudge.com/site/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://blue-nudge.com/revolution/css/settings.css" />
+    <link rel="stylesheet" href="https://blue-nudge.com/css/new-theme-css/rev-slider.css" />
+    <link rel="stylesheet" href="https://blue-nudge.com/css/new-theme-css/sliders.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap cdn css link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://blue-nudge.com/css/new-theme-css/style.css" /> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        div::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 3px;
+        }
+
+        div::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        div::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        div::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .btn-blue {
+            background-color: #027FBC;
+        }
+
+        .content-center {
+            justify-content: center;
+        }
+
+        .card-brand {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-width: 100%;
+
+        }
+
+        .brand {
+            text-align: center;
+            border: none;
+        }
+
+        .brand a {
+            width: 180px;
+            text-align: center;
+            display: block;
+            height: 100px;
+            margin: 0 auto;
+            padding: 10px;
+            /*background: rgb(135 175 215 / 45%);*/
+            border-radius: 10px;
+        }
+
+        .brand a img {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .bg-gradient {
+            background-color: #007fff63;
+        }
+
+        .wrapper {
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+        }
+
+        .container {
+            font: 1px;
+            padding: 0 20px;
+        }
+
+        .cards {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 8px 14px #4a5e79;
+            margin: 15px 0;
+        }
+
+        .item {
+            margin: 0 15px;
+            max-width: 390px;
+        }
+
+        .cd1 {
+            text-align: center;
+        }
+
+        .select_module_itm h4 {
+            margin: 20px 0px;
+        }
+
+        .select_module_itm {
+            overflow: hidden;
+        }
+
+        .select_module_itm_img img {
+            transition: all 0.5s;
+            max-width: 100%;
+            height: 177px;
+            object-fit: cover;
+        }
+
+        .cards:hover .select_module_itm_img img {
+            overflow: hidden;
+            transform: scale(1.1);
+        }
+
+        .btn-blue {
+            border: blue
+        }
+
+        .cursor-default {
+            pointer-events: none;
+        }
+
+        .float_button_insta {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            z-index: 9999;
+
+        }
+
+        .float_button_linked {
+            position: fixed;
+            bottom: 25px;
+            left: 15px;
+            z-index: 9999;
+
+        }
+
+        #about_us_container {
+            flex-direction: row;
+        }
+
+        @media screen and (max-width:992px) {
+            .wrap1 {
+                flex-flow: column;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .item {
+                flex-direction: column;
+            }
+
+            .content-center {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #about_us_container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #about_us_img_container {
+                margin-bottom: 3rem;
+            }
+        }
+    </style>
+    <style>
+        .linkedin,
+        .facebook,
+        .twitter,
+        .instagram {
+
+            width: 50px;
+            margin-bottom: 1rem;
+
+        }
+
+        .linkedin img,
+        .facebook img,
+        .twitter img,
+        .instagram img {
+            border-radius: 40px;
+
+
+        }
+
+
+        .logos {
+            position: fixed;
+            z-index: 222;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+
+
+
+        .buttonDashboard {
+            width: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .buttonDashboard {
+            position: fixed;
+            z-index: 222;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+
+        .directToDashboard {
+            position: fixed;
+            z-index: 222;
+            top: 92%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+    </style>
+    <script src="https://blue-nudge.com/js/jquery.min.js"></script>
+    <script src="https://blue-nudge.com/site/js/DialogTrigger.js"></script>
+
+
+
+
+
+    <!-- Facebook Pixel Code -->
+    <script> !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '225111439026344'); fbq('track', 'PageView'); </script>
+    <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=225111439026344&ev=PageView &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKV7NQ6VRH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-234330020-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PPK5WW7');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPK5WW7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="main-content" id="panel">
+        <style>
+            .action-btn {
+                background-color: #FF7F00;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+            }
+
+            .action-btn:hover {
+                background-color: #027FBD !important;
+                border-color: #027FBD !important;
+                color: #fff !important;
+            }
+
+            .action-btn::after {
+                content: '';
+                display: block;
+                width: 1.2em;
+                height: 1.2em;
+                position: absolute;
+                left: calc(50% - 0.75em);
+                top: calc(50% - 0.75em);
+                border: 0.15em solid transparent;
+                border-right-color: white;
+                border-radius: 50%;
+                -webkit-animation: button-anim 0.7s linear infinite;
+                animation: button-anim 0.7s linear infinite;
+                opacity: 0;
+            }
+
+            .action-btn::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #027FBD;
+                top: 0;
+                left: 0;
+                border-radius: 40px;
+                opacity: 0;
+            }
+
+            /*.rev_slider li .slotholder::before{
+          background: rgb(0 0 0 / 71%) !important;
+          }*/
+            @-webkit-keyframes button-anim {
+                from {
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+
+                to {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes button-anim {
+                from {
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+
+                to {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            .action-btn.loading {
+                color: transparent;
+            }
+
+            .action-btn.loading::after,
+            .action-btn.loading::before {
+                opacity: 1;
+            }
+
+
+            @media (max-width: 1200px) {
+                .nav-item .submenu {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+
+                .border {
+                    border: 3px solid #fff !important;
+                }
+            }
+
+            .dropdown-menu .dropdown-toggle:after {
+                border-top: .3em solid transparent;
+                border-right: 0;
+                border-bottom: .3em solid transparent;
+                border-left: .3em solid;
+            }
+
+            .dropdown-menu .dropdown-menu {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .dropdown-menu li {
+                position: relative;
+            }
+
+            .nav-item .submenu {
+                display: none;
+                position: relative;
+                left: 100%;
+                top: -1px;
+            }
+
+            .nav-item .submenu-left {
+                right: 100%;
+                left: auto;
+            }
+
+            .nav-item .nav-link {
+                font-size: 17px;
+                color: white;
+            }
+
+            .nav-link {
+                font-size: 17px;
+                color: white;
+            }
+
+            .dropdown-menu>li:hover {
+                background-color: #e9e6e6;
+            }
+
+            .dropdown-menu>li:hover>.submenu {
+                display: block;
+            }
+
+            .navbar-toggler-icon i {
+                background: #FF7518;
+                padding: 2px 6px;
+                color: #023436;
+            }
+
+            .back-video {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                filter: blur(5px);
+                filter: brightness(40%);
+            }
+
+            @media (min-aspect-ratio: 16/9) {
+                .back-video {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            @media (max-aspect-ratio: 16/9) {
+                .back-video {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            .content {
+                text-align: center;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .content h1 {
+                font-size: 160px;
+                font-weight: 600;
+                z-index: 2;
+                transition: 0.5s;
+                color: #fff;
+                /* color: transparent;
+
+            -webkit-text-stroke: 1px #fff;
+            background: url(Photos\back.png);
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite; */
+            }
+
+            /* @keyframes back{
+            100%{
+                background-position: 2000px 0;
+            }
+        } */
+
+            .content h1:hover {
+                -webkit-text-stroke: 3px #024769;
+                -webkit-text-stroke: 3px #fff;
+                color: transparent
+            }
+
+            /* header .header_sec {
+            position: static;
+        } */
+
+            .btn-danger {
+                background-color: #ff7518;
+                border-color: #ff7518;
+                text-transform: uppercase;
+            }
+
+            .nav_left a {
+                font-size: 16px;
+            }
+
+
+            .btn {
+                padding: 10px 40px;
+                border-radius: 40px;
+            }
+
+            .btn,
+            .btn:hover,
+            a,
+            a:hover {
+                transition: all .5s;
+                cursor: pointer;
+            }
+        </style>
+
+        <section>
+            <header>
+
+
+                <div class="container" style="width: 100%; height: 100vh;">
+
+                    <video autoplay loop muted plays-inline class="back-video">
+                        <source src="Video\BlueNudgeTest1.mp4" type="video/mp4">
+                    </video>
+                    <nav class="navbar fixed-nav-bar navbar-expand-xl">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="https://blue-nudge.com"><img
+                                src="https://blue-nudge.com/site/img/logo_w.png" class="logo_desk"><img
+                                src="https://blue-nudge.com/site/img/logo.png" class="logo_scroll"></a>
+
+                        <div class="d-flex align-items-center d-xl-none ml-auto">
+
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                            </button>
+                        </div>
+                        <div class="overlay_menu"></div>
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <a href="javascript:void(0);" class="navbar_cross">✕</a>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://blue-nudge.com#about-us">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown"
+                                    onmouseleave="javascript:document.querySelector('.menudemo').click()">
+                                    <a class="nav-link dropdown-toggle menudemo" href="javascript:void(0);"
+                                        data-toggle="dropdown"
+                                        onmouseenter="javascript:document.querySelector('.menudemo').click()"> Offerings
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+                                        <li>
+                                            <a class="dropdown-item overflow-hidden"
+                                                href="https://blue-nudge.com/pathshala">Collective Responsibility
+                                                Drive(CRD)</a>
+                                        </li>
+                                        <li> <a class="dropdown-item overflow-hidden"
+                                                href="https://blue-nudge.com/internship">My Social Responsibility
+                                                (MSR)</a>
+                                            <!-- <ul class="submenu dropdown-menu" style="display: none;">
+                                    <li><a class="dropdown-item" href="javascript:void(0);">Coming Soon</a></li>
+                                </ul> -->
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item overflow-hidden"
+                                                href="https://blue-nudge.com/environmental-studies-program">Environmental
+                                                Studies Program</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://blue-nudge.com#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://blue-nudge.com/partners">Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://blue-nudge.com/our-journey">Our Journey</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://blue-nudge.com/contact-us">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="desktop_hide">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a href="javascript:void(0)" id="start"
+                                            class="btn btn-danger btn-lg rounded-pill btn-gradient header-start_the_test">Get
+                                            Nudged</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blue-nudge.com/login" id="start" class="nav-link nav-linkm"
+                                            onclick="">Sign in</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="nav_left mobile_hide">
+                            <ul>
+                                <li>
+                                    <a href="https://blue-nudge.com/register" id="start"
+                                        class="btn btn-danger btn-gradient header-start_the_test" onclick="">Get
+                                        Nudged</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown" onmouseleave="javascript:document.querySelector('.menudemo').click()">
+                    </li> -->
+                                <li>
+                                    <a href="https://blue-nudge.com/login" id="start" class="nav-link nav-linkm"
+                                        onclick="">Sign
+                                        in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="content">
+                        <h1 style="margin-top: 75px; font-family: 'Poppins', sans-serif;">Blue Nudge</h1>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+
+        <!-- Section - Our Clients -->
+
+        <style>
+            .counter-float {
+                position: fixed;
+                top: 50%;
+                right: 0;
+                transform: translate(12.5rem, -50%);
+                background-color: #aaceff;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                box-shadow: -1px -1px 8px 0px #00000070;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                z-index: 1;
+                transition: all 0.5s ease-in-out;
+            }
+
+            @media (max-width:640px) {
+                .counter-float {
+                    transform: translate(11.1rem, -50%);
+                }
+            }
+
+            .counter {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .counter p {
+                margin-bottom: 0;
+            }
+
+            .counter .label {
+                font-weight: 500;
+            }
+
+            .counter .count {}
+
+            .counter1,
+            .counter2 {
+                border-bottom: 1px solid #fff;
+            }
+
+            .pully {
+                position: absolute;
+                top: 50%;
+                transform: translate(-2.8rem, -50%);
+                background-color: #aaceff;
+                border-radius: 35%;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .pully img {
+                rotate: 90deg;
+                padding: 10px;
+            }
+
+            .counter-float.active {
+                transform: translate(0, -50%);
+            }
+
+            .pully img {
+                transition: all 0.5s ease-in-out;
+            }
+
+            .pully.active img {
+                rotate: -90deg;
+            }
+        </style>
+        <div class='counter-float text-white text-center'>
+            <div class='pully'>
+                <img src="https://blue-nudge.com/arrow-down.png" alt="">
+            </div>
+            <div class="counter counter1">
+                <p class="count">7</p>
+                <p class="label">Corporate participated</p>
+            </div>
+            <div class="counter counter2">
+                <p class="count">2104</p>
+                <p class="label">Schools On-board</p>
+            </div>
+            <div class="counter counter3">
+                <p class="count">297780</p>
+                <p class="label">Students Enrolled</p>
+            </div>
+        </div>
+
+        <section class="section-wrap partners bg-gradient pt-20 pb-20>
+        <div class=" container">
+            <div class="heading-row">
+                <div class="heading_type2 mb-5">
+                    <h3 style="color: #ff7518;">Our Clients</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-brand slider-brand">
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/Tata.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/mylan.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/UNICEF_Logo.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/icici.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/Ggl.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/logo_right_drriv.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/partners/salaam-bombay.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Offerings Section -->
+    <style>
+        h2 {
+            color: #024769;
+            font-size: 40px;
+            opacity: 2.0;
+        }
+
+        h5 {
+            color: #024769;
+            font-size: large;
+            opacity: 2.0;
+            text-align: justify;
+        }
+
+        .carousel-inner {
+            box-shadow: 6px 9px 9px 0px #00000042;
+        }
+        .text-block {
+            /* background-color: white;
+            opacity: 0.6;
+            color: transparent; */
+            background:rgba(255,255,255, 0.9);
+            padding: 7px;
+            margin: 0;
+        }
+
+        
+    </style>
+
+
+    <div class="container">
+
+        <h1
+            style="text-align: center; padding-top: 30px; padding-bottom: 25px; font-size: 50px; font-weight: 700; color: #024769;">
+            Our Offerings</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Photos\DSC_7694.JPG" class="d-block w-100 "
+                        style="height: 650px; object-fit: cover; filter: blur(0px);"
+                        alt="Collective Responsiblity Drive">
+                    <div class="text-block carousel-caption d-none d-md-block">
+                        <h2>Collective Responsiblity Drive</h2>
+                        <h5>An initiative rolled out for schools/ institutions/ organisations passionate about
+                            contributing to the environment, wherein individuals are encouraged to practice source
+                            segregation and collect waste for a minimum of three months. The segregated waste is
+                            collected from schools/offices by team Blue Nudge and is upcycled into plastic benches that
+                            are donated on a need basis.
+
+                            We believe that the process instils, in the individuals, and through them in the families,
+                            the habit of proper segregation and management of waste, for their lifetime and helps us
+                            build a climate conscious society.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos\DSC_7714.JPG" class="d-block w-100" alt="My Social Responsiblity"
+                        style="height: 650px; object-fit: cover; filter: blur(0px);">
+                    <div class="text-block carousel-caption d-none d-md-block">
+                        <h2>My Social Responsiblity</h2>
+                        <h5>The program aims to provide holistic experiential education related to sustainability and
+                            climate change. Participating in this program will serve as a springboard for student’s
+                            academic and professional growth. The interactive and problem-solving exposure will open
+                            doors for various national and international opportunities and deepen student’s
+                            understanding of sustainability and climate change.
+
+                            MSR covers a range of topics related to sustainability, including the impact of climate
+                            change, the importance of community engagement, and the need for behavioral change among
+                            individuals. Through a combination of lectures, discussions, and hands-on activities, the
+                            program helps learners gain a deeper understanding of these topics and develop the skills
+                            they need to make a positive impact on the environment.
+
+                            Although the program is not time bound, it is designed to be completed in 3 - 6 months, and
+                            is suitable for a wide range of learners, including students, professionals, and community
+                            members.Some representative placeholder content for the second slide.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Photos\DSC_7727.JPG" class="d-block w-100" alt="Environmental Studies Program"
+                        style="height: 650px; object-fit: cover; filter: blur(0px);">
+                    <div class="text-block carousel-caption d-none d-md-block">
+                        <h2>Environmental Studies Program</h2>
+                        <h5>Blue Nudge’s Environmental Studies and Behaviour Change program is an activity-centric
+                            community engagement program for students who feel responsible for the future and are
+                            passionate about building a sustainable world. The program consists of online learning
+                            modules and community engagement activities.
+
+                            The modules cover nine topics that provide them with a holistic idea of sustainability and
+                            the activities provide an on-ground exposure to students. During their community engagement
+                            hours, students also extensively participate in a waste collection drive. The plastic and
+                            paper collected during the course is upcycled into benches/chairs to be donated to the
+                            government schools in India.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 50px;"></div>
+
+
+
+
+    <!-- Schools Section -->
+
+
+    <section class="section-wrap partners bg-gradient pt-20 pb-20">
+        <div class="container">
+            <!-- <div class="heading-row">
+            <h2 class="intro-heading heading mb-4" style="color: #ff7518;">
+              Participating schools
+            </h2>
+          </div> -->
+            <div class="heading_type2 mb-5">
+                <h3 style="color: #ff7518;">Participating schools</h3>
+            </div>
+
+            <div class="row">
+                <div class="card-brand slider-brand1 school-slider">
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/cms.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/radhika.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/vidyabharti.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/vsit.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/delhigov.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/bluebells.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/GDGoenka.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/lionspublic.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/raman.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/redroses.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/ridge.png" alt="logo-img" class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/shivnadar.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/Suncity.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                    <div class="brand">
+                        <a href="#"><img src="https://blue-nudge.com/img/schools/vanasthali.png" alt="logo-img"
+                                class=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+
+
+
+    <style>
+        .gallery {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-width: 33%;
+            -moz-column-width: 33%;
+            column-width: 33%;
+            /* border: 1px solid black; */
+        }
+
+        .gallery .pics {
+            -webkit-transition: all 350ms ease;
+            transition: all 350ms ease;
+        }
+
+        .gallery .animation {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        @media (max-width: 450px) {
+            .gallery {
+                -webkit-column-count: 1;
+                -moz-column-count: 1;
+                column-count: 1;
+                -webkit-column-width: 100%;
+                -moz-column-width: 100%;
+                column-width: 100%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .btn.filter {
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+            }
+        }
+
+        figure {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+            border: 1px solid white;
+            border-radius: 13px;
+            box-shadow: 4px 7px 7px 0px #00000042;
+        }
+
+        figure:hover+span {
+            bottom: -36px;
+            opacity: 1;
+        }
+
+
+        .hover01 figure img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover01 figure:hover img {
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+
+        .btn-primary {
+            background-color: #024769;
+            border-color: #024769;
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            border-color: #024769;
+            color: #024769;
+            border: 1px solid ;
+        }
+
+        .btn {
+            padding: 10px 40px;
+            border-radius: 40px;
+        }
+
+        .btn,
+        .btn:hover,
+        a,
+        a:hover {
+
+            transition: all .5s;
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="container" style="padding: 10px; margin-top: 10px; ">
+
+        <h1
+            style="text-align: center; padding-top: 25px; padding-bottom: 15px; font-size: 50px; font-weight: 700; color: #024769;">
+            Gallery<h1>
+                <p style="text-align: center; font-size: 23px; padding-bottom: 5px; color: #FF781F;">Some photos from
+                    our great memories</p>
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 d-flex justify-content-center mb-5">
+
+                        <button type="button" class="btn rounded-pill btn-primary mx-2  filter"
+                            data-rel="all">All</button>
+                        <button type="button" class="btn rounded-pill btn-primary mx-2 filter" data-rel="1">Friday,
+                            September
+                            24th 2021</button>
+                        <button type="button" class="btn rounded-pill btn-primary mx-2 filter" data-rel="2">Thursday,
+                            August
+                            26th 2021</button>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="gallery hover01" id="gallery">
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 2 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7694.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 1 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7714.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 1 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7727.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 2 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7694.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 2 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7714.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="mb-3 pics animation all 1 ">
+                        <figure><img class="img-fluid" src="Photos\DSC_7727.JPG" alt="Card image cap"></figure>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+    </div>
+    <script src="index.js"></script>
+
+
+
+
+
+
+    <!-- Contact Us -->
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".header_sec").removeClass("in_header_sec");
+        });
+
+        function sendMail(event) {
+            $.ajax({
+                url: "https://blue-nudge.com/send-contect-email"
+                , method: "POST"
+                , dataType: "JSON"
+                , headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+                , data: {
+                    'contect_name': $('#contect_name').val()
+                    , 'contect_mail': $('#contect_mail').val()
+                    , 'contect_comment': $('#contect_comment').val()
+                    ,
+                }
+                , success: function (data) {
+                    console.log(data.success);
+                    if (data.success == true) {
+                        $('#contect_name').val(null);
+                        $('#contect_mail').val(null);
+                        $('#contect_comment').val(null);
+                        $('#alert-inner').remove();
+                        $('#alert-show').append(`<div class="alert alert-success alert-dismissible mt-3" id="alert-inner">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Success!</strong> ${data.message}
+            </div>`);
+                    } else if (data.success == false) {
+                        $('#alert-inner').remove();
+                        $('#alert-show').append(`<div class="alert alert-danger alert-dismissible mt-3" id="alert-inner">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Alert!</strong> ${data.message}
+            </div>`);
+                    }
+
+                }
+                , error: function (data) {
+
+                }
+            });
+        }
+
+    </script>
+
+    <style>
+        .start_modal {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #2e2e2e8f;
+            top: 0;
+            left: 0;
+            z-index: 333;
+        }
+
+        .modal_content {
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #d8d7d7;
+            padding: 1rem 0;
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: none;
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 360px) {
+            .modal_content {
+                width: 90%;
+            }
+        }
+    </style>
+    <footer class="footer_sec" style="background:#007fff63;">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer_item">
+                            <div class="footer_item_head">
+                                <h4 style="color:#ff7518">Contact Us</h4>
+                            </div>
+                            <div class="footer_item_links" style="color:black">
+                                <div class="contact-item d-flex justify-center align-items-start my-3">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        Suite, 5D,<br>
+                                        Aria Signature Tower JW Marriott,<br>
+                                        New Delhi-110037,<br>
+                                        New Delhi, Delhi 110037
+                                    </p>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <p style="color:black">
+                                        Monday — Saturday <br>
+                                        09:30 AM — 06:30 PM <br>
+                                        <i class="fa fa-phone mr-2"></i> <a style="color:black"
+                                            href="tel: (+011) 40059100">011-40059100</a> <br>
+                                        <i class="fa fa-envelope mr-2"></i> <a style="color:black"
+                                            href="mailto: info@blue-nudge.com">info@blue-nudge.com</a>
+                                        <!-- Contact No. : <a href="tel: (+91) 6388408804">011-40059100</a> <br> -->
+                                    </p>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-4">
+                        <style>
+                            .twitter_embed {
+                                width: 100%;
+                                height: 25rem;
+                                overflow: auto;
+                            }
+                        </style>
+                        <div class='twitter_embed' style="color:black">
+                            <a class="twitter-timeline" href="https://twitter.com/NudgeBlue?ref_src=twsrc%5Etfw"
+                                data-tweet-limit="2"> Tweets by @NudgeBlue</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7" style="color:black">
+                        <div class="footer_success">
+                            <p style="color:black">© 2022 Blue Nudge. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer_social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/100915292512880/posts/pfbid0Fv2tRg4sHJfRismXhzDcAcMYPWDEydao9if277bwmPCtEabYDWrziyB2sodnoSvFl/?app=fbl"
+                                        target="_black" class="f_facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/NudgeBlue?t=OyWlj9OPtq5yD7nqmavrCg&s=09"
+                                        target="_black" class="f_twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/blue-nudge/" target="_black"
+                                        class="f_linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://instagram.com/bluenudge?igshid=YmMyMTA2M2Y=" target="_black"
+                                        class="f_instagram"><i class="fa fa-instagram"></i></a></li>
+                                <!-- <li><a target="_black" class="f_youtube"><i class="fa fa-play"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="startModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="max-width: 700px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enquire now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="SubmitForm" enctype="multipart/form-data" method="post">
+                        <input type="hidden" name="_token" value="ILN8A5pnN02i6ZfgcJLrn5v5t3VoYD8VHjn6llZD">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name</label>
+                                    <input type="text" class="form-control" name="firstname" id="firstname" value="">
+                                </div>
+                                <div class="text-danger" id="firstname_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Last Name</label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname" value="">
+                                </div>
+                                <div class="text-danger" id="lastname_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Mobile</label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile" value="">
+                                </div>
+                                <div class="text-danger" id="mobile_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" value="">
+                                </div>
+                                <div class="text-danger" id="email_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Gender</label>
+                                    <div class="d-flex">
+                                        <div class="form-check pl-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender"
+                                                value="Male" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check pl-0 ml-3">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender"
+                                                value="Female">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-danger" id="gender_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">School/College Name</label>
+                                    <input type="text" class="form-control" name="school" id="school" value="">
+                                </div>
+                                <div class="text-danger" id="school_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">City</label>
+                                    <input type="text" class="form-control" name="city" id="city" value="">
+                                </div>
+                                <div class="text-danger" id="city_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Project Interested</label>
+                                    <select class="form-control" name="projectinterested" id="projectinterested">
+                                        <option></option>
+                                        <option>CRD - Recycling</option>
+                                        <option>CRD - Sustainable Fashion</option>
+                                        <option>CRD - Food Wastage</option>
+                                        <option>CRD - Clean Energy</option>
+                                        <option>CRD - Clean Water Access</option>
+                                        <option>CRD - Green Transportation</option>
+                                    </select>
+                                </div>
+                                <div class="text-danger" id="projectinterested_status"><small></small></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">When do you want to start?</label>
+                                    <input type="date" class="form-control" name="startdate" id="startdate" value="">
+                                </div>
+                                <div class="text-danger" id="startdate_status"><small></small></div>
+                            </div>
+                            <input type="hidden" name="type" id="type" value="">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var isSeenThePledge = localStorage.getItem('isSeenThePledge')
+        if (isSeenThePledge === null || isSeenThePledge === undefined || !isSeenThePledge) {
+            $('.start_modal').removeClass('d-none')
+        }
+        else if (isSeenThePledge) {
+            $('.start_modal').addClass('d-none')
+        }
+        $('.pledge-submit').on('click', function () {
+            localStorage.setItem('isSeenThePledge', true)
+        })
+
+        function validateMobile() {
+            let mobile = $("#mobile").val();
+            let regex = /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+            if (!regex.test(mobile)) {
+                $('#mobile_status').html("**Please Enter Valid Phone Number");
+                MobileError = false;
+                return false;
+            }
+            else if (mobile.substring(0, 1) == " ") {
+                $('#mobile_status').html("**Enter Valid Phone Number");
+                MobileError = false;
+                return false;
+            }
+            else {
+                $('#mobile_status').html("");
+                MobileError = true;
+                return true;
+            }
+        }
+
+        $('.topButtoon').on('click', function (e) {
+            $('#type').val('1');
+        });
+        $('.bottomButtoon').on('click', function (e) {
+            $('#type').val('2');
+        });
+        $('#SubmitForm').on('submit', function (e) {
+            e.preventDefault();
+            let firstname = $('#firstname').val();
+            let lastname = $('#lastname').val();
+            let email = $('#email').val();
+            let mobile = $('#mobile').val();
+            let gender = $("input[name='gender']:checked").val()
+            let city = $('#city').val();
+            let school = $('#school').val();
+            let projectinterested = $('#projectinterested').val();
+            let startdate = $('#startdate').val();
+            let check = $('#type').val();
+            validateMobile();
+            if ((MobileError == true)) {
+                var formData = new FormData()
+                formData.append('_token', 'ILN8A5pnN02i6ZfgcJLrn5v5t3VoYD8VHjn6llZD');
+                formData.append('firstname', firstname);
+                formData.append('lastname', lastname);
+                formData.append('email', email);
+                formData.append('mobile', mobile);
+                formData.append('gender', gender);
+                formData.append('city', city);
+                formData.append('school', school);
+                formData.append('projectinterested', projectinterested);
+                formData.append('startdate', startdate);
+                $.ajax({
+                    url: "/storeInternship",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        $('#startModal').modal('hide');
+                        if (check == '1') {
+                            $('#successMsg2').html('You have registerd successfully!!');
+                        } else {
+                            $('#successMsg').html('You have registerd successfully!!');
+                        }
+                        window.setTimeout(function () {
+                            location.reload();
+                        }, 5000);
+                    },
+                    error: function (response) {
+                        $('#firstname_status').html(response.responseJSON.errors.firstname);
+                        $('#lastname_status').html(response.responseJSON.errors.lastname);
+                        $('#email_status').html(response.responseJSON.errors.email);
+                        $('#mobile_status').html(response.responseJSON.errors.mobile);
+                        $('#gender_status').html(response.responseJSON.errors.gender);
+                        $('#school_status').html(response.responseJSON.errors.school);
+                        $('#city_status').html(response.responseJSON.errors.city);
+                        $('#projectinterested_status').html(response.responseJSON.errors.projectinterested);
+                        $('#startdate_status').html(response.responseJSON.errors.startdate);
+                    },
+                });
+            } else {
+                return false;
+            }
+        });
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+
+</html>
